@@ -19,11 +19,71 @@
         <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UX0aAJ_6ftWTTiIvv_Kv-6" target="UX0aAJ_6ftWTTiIvv_Kv-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-6" value="Video-3" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="200" y="352.5" width="80" height="80" as="geometry" />
+        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UX0aAJ_6ftWTTiIvv_Kv-6" target="UX0aAJ_6ftWTTiIvv_Kv-14">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-10" value="How to update the ui when the state changes?&amp;nbsp;&lt;br&gt;1.)we use the blocbuilder widget it rebuilds the whole ui when the state changes.&amp;nbsp;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="360" y="295" width="400" height="195" as="geometry" />
+        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-6" value="Video-3&lt;br&gt;(BlocBuilder)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="200" y="292" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-10" value="How to update the ui when the state changes?&amp;nbsp;&lt;br&gt;1.)we use the blocbuilder widget it rebuilds the whole ui when the state changes.&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="295" width="400" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UX0aAJ_6ftWTTiIvv_Kv-14" target="UX0aAJ_6ftWTTiIvv_Kv-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UX0aAJ_6ftWTTiIvv_Kv-14" target="UX0aAJ_6ftWTTiIvv_Kv-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-14" value="Video-4&lt;br&gt;(BlocProvider)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="200" y="452" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-16" value="It is used to provide the instance of the bloc to the widget tree making it accessible to the widget that needs it.&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="436" width="390" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UX0aAJ_6ftWTTiIvv_Kv-20" target="UX0aAJ_6ftWTTiIvv_Kv-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UX0aAJ_6ftWTTiIvv_Kv-20" target="UX0aAJ_6ftWTTiIvv_Kv-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-20" value="Video-5&lt;br&gt;(Multi-BlocProvider)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="200" y="611" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-24" value="MultiBlocpROVIDER&lt;br&gt;This helps in the situation when the codes has multipleprovider" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="611" width="410" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UX0aAJ_6ftWTTiIvv_Kv-26" target="UX0aAJ_6ftWTTiIvv_Kv-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UX0aAJ_6ftWTTiIvv_Kv-26" target="UX0aAJ_6ftWTTiIvv_Kv-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-26" value="Video-6&lt;br&gt;(BlocListener)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="200" y="772" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-28" value="This is used to change the ui of the app without rebuilding the whole ui&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="772" width="410" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UX0aAJ_6ftWTTiIvv_Kv-30" target="UX0aAJ_6ftWTTiIvv_Kv-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UX0aAJ_6ftWTTiIvv_Kv-30" target="UX0aAJ_6ftWTTiIvv_Kv-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-30" value="Video-7&lt;br&gt;(BlocConsumer)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="200" y="932" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-32" value="This is used to when the person wants to use the blocbuilder and the bloclistener together" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="931" width="410" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UX0aAJ_6ftWTTiIvv_Kv-34" target="UX0aAJ_6ftWTTiIvv_Kv-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-34" value="Video-8&lt;br&gt;(Repository in Bloc)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="200" y="1092" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-36" value="This is layer between the bussiness logic&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1092" width="410" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
