@@ -20,7 +20,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-6" value="Video-3" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="200" y="295" width="80" height="80" as="geometry" />
+          <mxGeometry x="200" y="352.5" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="UX0aAJ_6ftWTTiIvv_Kv-10" value="How to update the ui when the state changes?&amp;nbsp;&lt;br&gt;1.)we use the blocbuilder widget it rebuilds the whole ui when the state changes.&amp;nbsp;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="360" y="295" width="400" height="195" as="geometry" />
