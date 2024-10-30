@@ -83,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
            FloatingActionButton(
             onPressed: () {
-              counterBloc.add(CounterDecrementEvent());
+              counterBloc.add(CounterIncrementEvent());
             },
             tooltip: 'Increment',
             child: const Icon(Icons.add),
