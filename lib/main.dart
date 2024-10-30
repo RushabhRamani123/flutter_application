@@ -3,6 +3,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:statemanagement/bloc/counter_bloc.dart';
 import 'package:statemanagement/bloc/counter_event.dart';
 import 'package:statemanagement/bloc/counter_state.dart';
+import 'package:statemanagement/visiblity_bloc/visibility_bloc.dart';
+import 'package:statemanagement/visiblity_bloc/visibility_event.dart';
+import 'package:statemanagement/visiblity_bloc/visibility_state.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,9 +24,12 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home:
-      BlocProvider(
+      MultiBlocProvider(
       // when the blocBuilder looks up then only it creates the instance. But when the lazy:true then the instance will be created by default. 
-      create: (context)=>CounterBloc(),
+
+      providers: [BlocProvider(create: (context)=>CounterBloc()),
+      BlocProvider(create: (context)=>VisibilityBloc()),],
+      
       child: const MyHomePage(title: 'Flutter Demo Home Page'),
       ) 
       // home:BlocProvider.value(
@@ -67,27 +73,48 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: Theme.of(context).textTheme.headlineMedium,
                 );
               }
-            )
+            ),
+            BlocBuilder<VisibilityBloc,VisibilityState>(             
+              builder:(context,state){
+              return Visibility(
+              visible: state.visible,     
+              child: Container(color: Colors.deepPurpleAccent,width: 200,height:200,));
+            } )
           ],
         ),
       ),
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.end, // Add this to align buttons to the end
         children: [
-          FloatingActionButton(
+        FloatingActionButton(
             onPressed: () {
               context.read<CounterBloc>().add(CounterIncrementEvent());
             },
             tooltip: 'Increment',
             child: const Icon(Icons.add),
           ),
-           FloatingActionButton(
+        FloatingActionButton(
             onPressed: () {
               context.read<CounterBloc>().add(CounterDecrementEvent());
             },
             tooltip: 'Increment',
             child: const Icon(Icons.abc_outlined),
           ),
+        FloatingActionButton(
+            onPressed: () {
+              context.read<VisibilityBloc>().add(HideVisibilityEvent());
+            },
+            tooltip: 'Increment',
+            child: const Text("Hide"),
+          ),
+        FloatingActionButton(
+            onPressed: () {
+              context.read<VisibilityBloc>().add(ShowVisibilityEvent());
+            },
+            tooltip: 'Increment',
+            child: const Text("Show"),
+          ),
+
         ],
       ),
     );
