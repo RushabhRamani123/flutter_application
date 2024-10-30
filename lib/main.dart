@@ -20,7 +20,16 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 73, 255, 1)),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home:
+      BlocProvider(
+      // when the blocBuilder looks up then only it creates the instance. But when the lazy:true then the instance will be created by default. 
+      create: (context)=>CounterBloc(),
+      child: const MyHomePage(title: 'Flutter Demo Home Page'),
+      ) 
+      // home:BlocProvider.value(
+      // context.read<BlocA>
+      // child: const MyHomePage(title: 'Flutter Demo Home Page'),
+      // ) 
     );
   }
 }
@@ -34,14 +43,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final counterBloc = CounterBloc();
-
-  @override
-  void dispose() {
-    counterBloc.close(); // Add dispose method
-    super.dispose();
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,7 +61,6 @@ class _MyHomePageState extends State<MyHomePage> {
               buildWhen: (previous, current) {
                 return true;
               },
-              bloc: counterBloc,
               builder: (context, state) {
                 return Text(
                   state.count.toString(),
@@ -76,17 +76,17 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           FloatingActionButton(
             onPressed: () {
-              counterBloc.add(CounterIncrementEvent());
+              context.read<CounterBloc>().add(CounterIncrementEvent());
             },
             tooltip: 'Increment',
             child: const Icon(Icons.add),
           ),
            FloatingActionButton(
             onPressed: () {
-              counterBloc.add(CounterIncrementEvent());
+              context.read<CounterBloc>().add(CounterDecrementEvent());
             },
             tooltip: 'Increment',
-            child: const Icon(Icons.add),
+            child: const Icon(Icons.abc_outlined),
           ),
         ],
       ),
